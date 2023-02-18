@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.parafrst{
+    text-align: center;
+    color:gray;
+    margin-top: 25px;
+}
+.parasecond{
+    text-align: center;
+    color: gray;
+}
+.menu{
+    font-size: 45px;
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:gray;
+    color:#fff;
+}
+.nav-links a{
+    color:#fff;
+
+}
+.color{
+    color:skyblue;
+}
+.logo{
+    font-size: 32px;
+    margin-left: 45px;
+}
+.menu{
+    display: flex;
+    gap:1em;
+    font-size: 18px;
+}
+a:hover{
+    color:black;
+}
+.menu li:hover{
+    color:skyblue;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li{
+    padding: 5px  14px;
+}
+input[type=checkbox]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+
+}
+.model{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    width:500px;
+    height:300px;
+    margin:20px;
+}
+.textfrst{
+    position: absolute;
+    top:20%;
+    left:15%;
+    font-weight: 200;
+    color:#fff;
+    text-align: center;
+    padding: 2px;
+    justify-content:center;
+
+}
+.align{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.textsecond{
+    position: absolute;
+    top:20%;
+    left:65%;
+    font-weight: 200;
+    color:#fff;
+    text-align: center;
+    padding: 2px;
+    justify-content: center;
+
+}
+.aligning{
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+.parathird{
+    position: absolute;
+    top:20%;
+    left:15%;
+    font-weight: 200;
+    color:#fff;
+    text-align: center;
+    padding: 2px;
+    justify-content:center;
+}
+.alignment{
+    margin-top: 10px;
+    font-weight: 700 ;
+}
+.parafourth{
+    position: absolute;
+    top:20%;
+    left:65%;
+    font-weight: 200;
+    color:#fff;
+    text-align: center;
+    padding: 2px;
+    justify-content: center;
+    
+}
+.aligns{
+    margin-top: 10px;
+    font-weight: 700 ;
+}
+
+@media (max-width:600px){
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: skyblue;
+        right:0;
+        left:0;
+        text-align: center;
+        padding:16px 0;
+    }
+    .menu li:hover{
+        display: inline-block;
+        background-color:skyblue;
+        transition: 0.3s ease;
+    }
+    .menu li+li{
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    a:hover{
+        color:green;
+    }
+    .model{
+        display: block;
+        
+    }
+    .textsecond{
+        position: absolute;
+        top:65%;
+        left:25%;
+        font-weight: 200;
+        color:#fff;
+        text-align: center;
+        padding: 2px;
+        justify-content: center;
+    }
+    .parafourth{
+        position: absolute;
+        top:65%;
+        left:25%;
+        font-weight: 200;
+        color:#fff;
+        text-align: center;
+        padding: 2px;
+        justify-content: center;
+    }
+    .textfrst{
+        position: absolute;
+        top:20%;
+        left:25%;
+        font-weight: 200;
+        color:#fff;
+        text-align: center;
+        padding: 2px;
+        justify-content:center;
+    
+    }
+    .parathird{
+        position: absolute;
+        top:20%;
+        left:18%;
+        font-weight: 200;
+        color:#fff;
+        text-align: center;
+        padding: 2px;
+        justify-content:center;
+    
+    }
+    img{
+        display:block;
+        width:80%;
+        height:75%;
+        margin:20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        orientation: landscape;
+    }
+}
