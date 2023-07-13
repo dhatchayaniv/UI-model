@@ -1,1 +1,1 @@
-# UI-model
+https://dhatchayaniv.github.io/UI-model/
